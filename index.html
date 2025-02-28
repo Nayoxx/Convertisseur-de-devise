@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur de devise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Convertisseur de devise</h1>
+    <div class="container">
+        <form>
+            <input type="number" id="numberInput" placeholder="Montant" step="any" />
+    
+            <label for="devise-source">De :</label>
+            <select id="devise-source">
+                <option value="USD">Dollars ($)</option>
+                <option value="EUR">Euros (€)</option>
+                <option value="GBP">Livres (£)</option>
+                <option value="JPY">Yens (¥)</option>
+                <option value="TRY">Livres Turques (₺)</option>
+            </select>
+    
+            <button type="button" id="switch">⇄</button>
+    
+            <label for="devise-cible">À :</label>
+            <select id="devise-cible">
+                <option value="USD">Dollars ($)</option>
+                <option value="EUR">Euros (€)</option>
+                <option value="GBP">Livres (£)</option>
+                <option value="JPY">Yens (¥)</option>
+                <option value="TRY">Livres Turques (₺)</option>
+            </select>
+        </form> 
+        <p id="output">Résultat : Veuillez entrer un montant</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
